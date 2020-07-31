@@ -1,0 +1,182 @@
+:root{
+    --mainBackground:#f5f5f5;
+    --mainColour:#fff;
+}
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background:var(--mainColour);
+    font-family: "Courgette", Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+button:focus-within{
+    outline: none;
+}
+.btn{
+    margin: 20px 0;
+    font-size: 17px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    background-color: #259821;
+    transition: .3s ease-in-out;
+}
+.btn:hover{
+    border:2px solid #259821;
+    background-color: transparent;
+    color: #259821;
+}
+.info{
+    display: none;
+    font-size: 18px;
+    padding: 10px 0 10px 10px;
+    width: 90%;
+    margin: 20px 0 0;
+    border-radius: 10px;
+    border: 2px solid #f33732;
+    background-color: rgb(239 132 129 / 10%);
+    color: #f33732;
+}
+ .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.header{
+    text-align: center;
+}
+.add-btn{
+    padding: 7px 15px;
+}
+.card-body{
+    display: none;
+    width: 500px;
+    margin-top: 25px;
+    padding: 0px 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color:#259821;
+}
+.card-questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+.close-btn{
+    cursor: pointer;
+    font-size: 34px;
+    font-weight: 600;
+    color: #f33732;
+    padding:0px 8px;
+}
+.card-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-group{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.form-group label{
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+.form-group textarea{
+    width: 100%;
+    border: 2px solid #259821;
+    border-radius: 5px;
+    height: 60px;
+    padding:5px;
+    font-size: 17px;
+    transition: .3s ease-in-out;
+}
+.form-group textarea:focus-within{
+    outline: none;
+    border: 2px solid #000;
+}
+.submit-question,.edit-question{
+    padding: 5px 20px;
+    background-color:#259821;
+    color: #fff;
+    width: 50%;
+    border: none;
+    transition: .3s ease-in-out;
+    display: block;
+}
+.edit-question{
+    display: none;
+}
+.submit-question:focus-within{
+    outline: none;
+}
+.submit-question:hover{
+    border: 2px solid#259821;
+    background-color: transparent;
+    color:#259821;
+}
+.question-list{
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.question-list-div{
+    background: var(--mainBackground);
+    padding: 0px 20px 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #d0d0d0;
+}
+.question-div-title,.question-div-answer{
+    margin: 10px 0;
+    font-size: 21px;
+    text-transform: capitalize;
+}
+.question-div-answer{
+    font-size: 18px;
+    font-weight: 100;
+    display: none;
+}
+.question-div-answer-show{
+    display: block;
+}
+.show-answer{
+    text-decoration: underline;
+    color: #259821;
+    margin: 10px 0;
+     display: block;
+}
+.question-list-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.flashcard-delete,.flashcard-edit{
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #259821;
+    color: #259821;
+}

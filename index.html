@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>flashcard</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="row">
+                <div class="header">
+                    <h1>Flashcard</h1>
+                    <button class="btn add-btn">Add Question</button>
+                </div>
+                <div class="card-body">
+                    <div class="card-questions">
+                        <span class="close-btn">&times</span>
+                        <form class="card-form">
+                            <p class="info"></p>
+                            <div class="form-group">
+                                <label for="inputQuestion">Question</label>
+                                <textarea id="inputQuestion" class="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAnswer">Answer</label>
+                                <textarea id="inputAnswer" class="text"></textarea>
+                            </div>
+                            <input type="submit" class="btn submit-question" value="Save">
+                        </form>
+                    </div>
+                </div>
+                <div class="question-list">
+
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
